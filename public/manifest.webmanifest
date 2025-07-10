@@ -1,0 +1,49 @@
+{
+  "short_name": "SB Music",
+  "name": "SB Music",
+  "icons": [
+    {
+      "src": "image (1).png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "image (1).png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "image (1).png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "image (1).png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot.webp",
+      "sizes": "945x987",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "SB Music"
+    },
+    {
+      "src": "screenshot.webp",
+      "sizes": "945x987",
+      "type": "image/webp",
+      "label": "SB Music"
+    }
+  ],
+  "start_url": "/",
+  "description": "SB Music is a PWA that lets you explore and listen to new music and songs online. it offers a smooth and responsive web experience with a robust YouTube search functionality.",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

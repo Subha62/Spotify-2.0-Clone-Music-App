@@ -1,0 +1,119 @@
+/* ========== HOME SECTION ========== */
+.home-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 32px 5%;
+  background-color: #000; /* base dark */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  transition: background 0.3s ease;
+}
+
+.home-section.with-song-bg {
+  /* Optional: subtle overlay if a song is playing */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.95),
+    rgba(15, 15, 15, 0.98)
+  );
+}
+
+/* ========== SONGS LIST CONTAINER ========== */
+.songs-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.songs-list-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.songs-list-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.view-all {
+  font-size: 14px;
+  color: #1db954; /* Spotify green vibe */
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.view-all:hover {
+  opacity: 0.7;
+}
+
+/* ========== SONGS LIST WRAPPER ========== */
+.songs-list-wrapper {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.songs-list-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.songs-list-wrapper::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 3px;
+}
+
+.songs-list-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ========== SEARCH NOT FOUND ========== */
+.search-not-found-wrapper {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.search-not-found-wrapper h1 {
+  font-size: 64px;
+  margin: 0;
+  color: #999;
+}
+
+.search-query-text {
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .home-section {
+    padding: 24px 4%;
+    gap: 32px;
+  }
+
+  .songs-list-title {
+    font-size: 20px;
+  }
+
+  .songs-list-wrapper {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-section {
+    padding: 16px 4%;
+    gap: 24px;
+  }
+
+  .songs-list-title {
+    font-size: 18px;
+  }
+
+  .view-all {
+    font-size: 12px;
+  }
+}
