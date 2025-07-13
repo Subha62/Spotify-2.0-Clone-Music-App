@@ -25,10 +25,15 @@ many more..
 
 ## Technology used:
 React js
+
 CSS3
+
 Redux toolkit
+
 React router dom
+
 React loading skeleton
+
 React icons
 
 # Note:
